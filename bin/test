@@ -1,0 +1,9 @@
+To be adept at tuning search relevancy, it helps to understand the Lucene scoring algorithm, also known as the tf.idf model. This scoring model involves a number of scoring factors:
+
+tf - Term Frequency. The frequency with which a term appears in a document. Given a search query, the higher the term frequency, the higher the document score.
+
+idf - Inverse Document Frequency. The rarer a term is across all documents in the index, the higher its contribution to the score.
+
+coord - Coordination Factor. The more query terms that are found in a document, the higher its score.
+
+fieldNorm - Field length. The more words that a field contains, the lower its score. This factor penalizes documents with longer field values.
